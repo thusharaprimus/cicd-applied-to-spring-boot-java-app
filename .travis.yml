@@ -16,7 +16,7 @@ services:
 
 before_install:
   - mvn clean
-  - echo "$Androidpass2" | docker login  -u "$thusharas" --password-stdin
+  - echo Androidpass2 | docker login  -u thusharas --password-stdin
   - docker pull openjdk:8-jdk-alpine
 
 script:
